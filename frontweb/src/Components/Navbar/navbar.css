@@ -1,0 +1,110 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+
+.navBarSection .header
+   {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .navBar{
+            background: #efefef ;
+            position: absolute;
+            height: max-content;
+            padding: 1rem;
+            width: 100%;
+            top: 0;
+            left: -500%;
+            box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+            transition: .5s ease;
+            z-index: 1000;
+        }
+
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+        }
+
+        .navItem{
+            padding: 1rem 0;
+        }
+
+        .navLink{
+            color: var(--textColor);
+            font-size: .9rem;
+            font-weight: 600;
+            &:hover{
+                color: var(--PrimaryColor); /*mudar isso mais tarde assim que inserir rotas */
+            }
+        }
+
+        .closeNavbar{
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color: var(--PrimaryColor);
+        }
+
+        .icon{
+            &:hover{
+                color: var(--HoverColor);
+            }
+        }
+
+        .activeNavBar{
+            left: 0;
+        }
+    }
+
+    .headerBtns{
+        flex-direction: column;
+    }
+
+    .btn{
+        margin-top: 1rem;
+    }
+
+    a{
+        font-weight: 600;
+
+        &:hover{
+            color: var
+            (--whiteColor);
+        }
+    }
+
+    .loginBtn{
+        background: none;
+        border: 1px solid var(--PrimaryColor);
+        &:hover{
+            background: var(--HoverColor);
+        }
+    }
+
+    .loginBtn a{
+        color: #4596D1;
+        &:hover{
+          color: white;
+        }
+    }
+    

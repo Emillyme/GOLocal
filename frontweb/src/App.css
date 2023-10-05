@@ -1,6 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
     padding: 0;
-    
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease;
+}
+
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #0e446a;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(255, 255, 255, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;   
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover a{
+    color: var(--whiteColor);
+}
+
+.secIntro{
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.secIntro .secTitle{
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.secIntro p{
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 3;
+}
+
+.logo{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
