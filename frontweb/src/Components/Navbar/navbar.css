@@ -76,6 +76,14 @@
         }
     }
 
+    .icon{
+        font-size: 25px;
+        color: var(--whiteColor);
+        &:hover{
+            color: var(--PrimaryColor);
+        }
+    }
+
     .headerBtns{
         flex-direction: column;
     }

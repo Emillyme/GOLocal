@@ -1,0 +1,100 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+.home{
+    height: 80vh;
+    background-image: linear-gradient(transparent -200%, #000000),
+    url('../../Assets/hortolandia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.homeText{
+    text-align: center;
+}
+
+.title{
+    color: var(--whiteColor);
+    font-size:2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.subTitle{
+    color: var(--whiteColor);
+    opacity: .9;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.btn{
+    padding: .6rem 1.5rem;   
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.homeCard{
+    width: 70%;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: var(--whiteColor);
+    position: absolute;
+    gap: 1rem;
+    justify-content: center;
+    bottom: -15%;
+    transform: translate(-50%);
+    left: 50%;
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+}
+
+.locationDiv, .categoryDiv{
+    width: 100%;
+}
+
+label{
+    display: block;
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: .1rem;
+}
+
+input, select{
+    width: 100%;
+    background: var(--inputColor);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+
+    &::placeholder{
+        font-size: 13px;
+        opacity: .5;
+        font-weight: 400;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+}

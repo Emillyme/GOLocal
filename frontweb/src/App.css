@@ -105,4 +105,5 @@ input{
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    color: var(--PrimaryColor);
 }
