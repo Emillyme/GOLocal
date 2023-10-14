@@ -1,0 +1,153 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(44, 44, 44);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+    /*box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);*/
+}
+
+.popular{
+    padding-top: 10rem;
+}
+
+.secHeader{
+    flex-direction: column;
+    align-items: flex-start;
+    gab: 1rem;
+}
+
+.secTitle{
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+p{
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.icon-popular{
+    cursor: pointer;   
+    padding: .5rem;
+    background: var(--greyText);
+    border-radius:  50%;
+    font-size: 2.5rem;
+    &:hover{
+        background: black;
+        color: var(--whiteColor);
+    }
+}
+
+.iconsDiv{
+    gab: 0.5rem;
+}
+
+.icon-p{
+    font-size: 1.5rem;
+    cursor: pointer;   
+}
+
+
+.mainContent{
+    padding: 2rem 0;
+    gab: 1rem;
+}
+
+.singleDestination{
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);
+}
+
+.destImage{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3{
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    opacity: .7;
+    font-size: 13px;
+}
+
+
+.content-dest{
+    padding-top: 20px;
+}
+
+.icon-info{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: .5rem;
+    background: var(--PrimaryColor);
+    font-size: 2.9rem;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    border: 1px solid transparent;
+    transition: .2s ease;
+
+    &:hover{
+        background: var(--blackColor);
+        border: 2px solid var(--PrimaryColor);
+        color: var(--PrimaryColor);
+    }
+}
+
+
+.destFooter{
+    padding: 1rem;
+}
+
+.name{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--blackColor);
+    position: relative;
+    width: max-content;
+}
+
+.destText{
+    justify-content: space-between;
+}
+
+.destText h6{
+    color: var(--blackColor);
+    font-size: 13px;
+}
+
+.overlayInfo p{
+    color: #cecbcb;
+    font-size: 15px;
+}
+
+.icon-p{
+    color: var(--PrimaryColor);
+    font-size: 30px;
+}
+
+.description-text p{
+    font-size: 15px;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
