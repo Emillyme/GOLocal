@@ -77,13 +77,10 @@ const Popular = () => {
 
                     <div className="destText flex">
                       <h6>{location}</h6>
-                      <span className="flex">
-                        <span className="dot">
-                          <BsDot className="icon-p" />
-                        </span>
+                      <span className="flex status">
                         {status}
                       </span>
-                    </div>
+                    </div>          
                   </div>
                 </div>
               </div>

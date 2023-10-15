@@ -1,0 +1,89 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(44, 44, 44);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+    /*box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);*/
+}
+
+
+.mainContainer{
+    gap: 1rem;
+}
+
+.singlePost{
+    gap: 0.7rem;
+    padding-top: 2.7em;
+}
+
+.secTitle{
+    color: var(--blackColor);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.secIntro p{
+    font-size: 17px;
+}
+
+.imgDiv{
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 5px solid var(--greyBg);
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);
+    overflow: hidden;
+}
+
+&:hover img{
+    transform: scale(1.1);        
+    transition:  3s ease;
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.postDetails h3{
+    color: var(--blackColor);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.postDetails p{
+    font-size: 15px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+a{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    width: max-content;
+    &:hover{
+        color: rgb(0, 43, 69);
+        font-weight: 600;
+    }
+}
+
+.icon-p{
+    color: white;
+}
+
+&:hover .icon-p{
+    color: rgb(0, 43, 69);
+    transform: translateX(3px);
+}
+
+.readmore{
+    background: var(--PrimaryColor);
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+}

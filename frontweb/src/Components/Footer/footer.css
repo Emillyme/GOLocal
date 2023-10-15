@@ -1,0 +1,20 @@
+.logo-f{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
+    cursor: pointer;
+}
+
+.icon{
+    color: unset;
+}
+
+.footer{
+    background: var(--greyBg);
+    padding: 2rem 0;
+}
+
+.secContainer{
+    gap: 1.5rem;
+    text-align:  center;
+}

@@ -92,7 +92,7 @@ p{
 
 
 .content-dest{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .icon-info{
@@ -150,4 +150,12 @@ p{
     font-size: 15px;
     padding-bottom: 16px;
     padding-top: 10px;
+}
+
+.status{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background: #e5e5e5;
+    color: #1469a6;
+    font-weight: 500;
 }
