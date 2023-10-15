@@ -13,8 +13,8 @@ const Footer = () => {
             <h1 className="flex logo-f">golocal.</h1>
           </div>
           <div className="socials flex">
-            <AiFillGithub className="icon" />
-            <AiOutlineWhatsApp className="icon" />
+            <AiFillGithub className="icon-f" />
+            <AiOutlineWhatsApp className="icon-f" />
           </div>
         </div>
 
@@ -42,6 +42,9 @@ const Footer = () => {
             </span>
             <span className="phone">+55 19 49494-4949</span>
             <span className="email">golocal@gmail.com</span>
+        
+            <span className="etec">©️ ETEC DE HORTOLÂNDIA - TCC</span>
+        
         </div>
 
 
