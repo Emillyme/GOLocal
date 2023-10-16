@@ -56,7 +56,6 @@ p{
 
 
 .mainContent{
-    padding: 2rem 0;
     gab: 1rem;
 }
 
@@ -158,4 +157,19 @@ p{
     background: #e5e5e5;
     color: #1469a6;
     font-weight: 500;
+}
+
+.textDiv p{
+    display: flex;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (min-width: 480px) {
+    .popular{
+        padding-top: 10rem;
+    }
+    .singleDestination{
+        margin: 10px;
+    }
 }

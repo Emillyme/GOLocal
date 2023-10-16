@@ -10,11 +10,12 @@ const Home = () => {
 
           <p className="subTitle">Mais que um Guia Comercial!</p>
 
-          <button className="btn">
+          <button className="explore btn">
             <a href="#explore">Explore Agora</a>
           </button>
         </div>
 
+      <div className="cardHome">
         <div className="homeCard grid">
           <div className="locationDiv">
             <label htmlFor="Location">Local</label>
@@ -34,11 +35,12 @@ const Home = () => {
               <option value="Empresas">Empresas</option>
             </select>
           </div>
-
-            <button className="btn">
+          
+            <button className="buscar">
                Buscar
             </button>
 
+        </div>
         </div>
       </div>
     </section>

@@ -47,6 +47,7 @@
 
         .navItem{
             padding: 1rem 0;
+            
         }
 
         .navLink{
@@ -56,6 +57,7 @@
             &:hover{
                 color: white; /*mudar isso mais tarde assim que inserir rotas */
             }
+            
         }
 
         .closeNavbar{
@@ -93,9 +95,6 @@
         flex-direction: column;
     }
 
-    .btn{
-        margin-top: 1rem;
-    }
 
     a{
         font-weight: 600;
@@ -109,9 +108,11 @@
     .loginBtn{
         background: none;
         border: 1px solid var(--PrimaryColor);
+        margin: 10px;
         &:hover{
             background: var(--HoverColor);
         }
+        
     }
 
     .loginBtn a{
@@ -121,4 +122,48 @@
         }
     }
     
+
+    @media screen and (min-width: 769px) {
+        .closeNavbar, .toggleNavbar{
+          display: none;
+        }
+
+        .header{
+            padding: 1.5rem 2rem !important;
+        }
+
+        .navLists{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .navLink{
+            padding: 0 .50rem;
+            font-size: .9rem;
+            font-weight: 400;
+
+            &:hover{
+                color: var(--PrimaryColor);
+            }
+        }
+
+        .btn{
+            margin-left: 1rem;
+        }
+
+        .btn a{
+            font-weight: 500;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .navItem{
+            padding: 0.7em;
+        }
+        
+    }
+
+
    

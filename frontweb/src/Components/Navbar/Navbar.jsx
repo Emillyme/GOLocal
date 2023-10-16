@@ -61,7 +61,7 @@ const Navbar = () => {
                             <a href="#Contato" className="navLink">Contato</a>
                         </li>
 
-                        <div className="headerBtns flex">
+                        <div className="flex">
                             <button className='btn loginBtn'>
                                 <a href="#Login">Login</a>
                             </button>
@@ -80,6 +80,7 @@ const Navbar = () => {
                 <div onClick={showNav} className="toggleNavbar">
                     <FiMenu className="icon" />
                 </div>
+                
             </div>
         </section>
     )

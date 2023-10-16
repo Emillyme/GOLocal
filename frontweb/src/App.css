@@ -108,3 +108,52 @@ input{
     color: var(--PrimaryColor);
 }
 
+/*REPONSIVIDADE:*/
+
+@media screen and (max-width: 335px){
+    .mainContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+   .content-dest{
+    padding: 9px;
+   }
+
+   .singleDestination{
+    width: 260px;
+   }
+
+   .cardHome {
+    padding-top: 90px;
+    
+   }
+}
+
+@media screen and (min-width: 336px){
+    .mainContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+@media screen and (min-width: 556px){
+    .mainContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
+@media screen and (min-width: 884px){
+    .mainContent{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media screen and (min-width: 1240px){
+    .container{
+        width: 75% !important;
+        margin: auto !important;
+    }
+
+}

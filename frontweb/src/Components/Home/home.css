@@ -52,6 +52,18 @@
     font-weight: 600;
 }
 
+.buscar{
+    padding: .6rem 1.5rem;   
+    color: var(--whiteColor);
+    font-weight: 600;
+     padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
 .homeCard{
     width: 70%;
     border-radius: 1rem;
@@ -98,3 +110,58 @@ input, select{
     }
 
 }
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 200px) {
+    .homeCard{
+        bottom: 10px;
+    }
+
+}
+@media screen and (min-width: 480px) {
+    .homeCard{
+        bottom: 30px;
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media screen and (min-width: 556px) {
+    
+    .title{
+        font-size: 2.5rem;
+    }
+    .subTitle{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+    
+    .homeCard{
+        bottom: 10%;
+        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+    }
+    
+    .buscar{
+        margin-top: 20px;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        margin: auto;
+        line-height: 4rem;
+    }
+
+    .subTitle{
+        width: 70%;
+    }
+}
+
+
+
+
+

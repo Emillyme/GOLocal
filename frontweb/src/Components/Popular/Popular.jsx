@@ -26,8 +26,17 @@ const Data = [
     imgSrc: img3,
     name: "Café no Jardim",
     description:
-      "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros e aconchegue-se em nosso ambiente com jardim!",
+      "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros ",
     location: "Hortolândia - Centro",
+    status: "Aberto",
+  },
+
+  {
+    imgSrc: img4,
+    name: "TechZone",
+    description:
+      "Navegue por uma variedade impressionante de produtos eletrônicos de última geração, incluindo smartphones, laptops, dispositivos inteligentes e acessórios inovadores.",
+    location: "Hortolândia - R. Pelé",
     status: "Aberto",
   },
 
