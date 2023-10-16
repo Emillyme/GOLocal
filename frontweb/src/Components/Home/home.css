@@ -114,13 +114,13 @@ input, select{
 /*RESPONSIVIDADE*/
 @media screen and (min-width: 200px) {
     .homeCard{
-        bottom: 10px;
+        bottom: -90px;
     }
 
 }
 @media screen and (min-width: 480px) {
     .homeCard{
-        bottom: 30px;
+        bottom: -90px;
         width: 90%;
         grid-template-columns: repeat(2,1fr);
     }
@@ -141,7 +141,7 @@ input, select{
 @media screen and (min-width: 720px) {
     
     .homeCard{
-        bottom: 10%;
+        bottom: -10%;
         grid-template-columns: repeat(4, 1fr);
         display: flex;
     }
