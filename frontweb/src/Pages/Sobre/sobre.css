@@ -1,0 +1,109 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+.Section-White .container-Sobre{
+    height: 40vh;
+    background-image: linear-gradient(transparent -100%, #000000c7),
+    url('../../Assets/images/us/grupo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.homeText{
+    text-align: center;
+}
+
+.SobreText{
+    padding-top: 2em;
+}
+
+.Sobre-Title{
+    color: var(--whiteColor);
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.subTitle{
+    color: var(--whiteColor);
+    opacity: .9;
+    font-weight: 300;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.row{
+    border: 1px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.column{
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.5em 0;
+}
+
+.card{
+    box-shadow: 0 0 2.2em black;
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--PrimaryColor);
+    cursor: pointer;
+}
+
+.card .imgProfile{
+    width: 8em;
+    height: 8em;
+    background-color: pink;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card .foto{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3{
+    font-weight: 500;
+}
+
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5rem 0 2rem 0;
+    letter-spacing: 1px;
+}
+
+.social-icon{
+    min-width: 50px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.card a{
+    text-decoration: none;
+    color: #0d3857;
+    font-size: 1.4em;
+}
