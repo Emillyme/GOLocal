@@ -49,61 +49,228 @@
     margin: auto;
 }
 
-.row{
-    border: 1px solid yellow;
+.row {
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
 }
 
-.column{
+.column {
     width: 100%;
-    border: 1px solid black;
     padding: 0.5em 0;
 }
 
-.card{
-    box-shadow: 0 0 2.2em black;
+.card {
+    box-shadow: 0 0 2.2em rgba(0, 0, 0, 0.43);
     padding: 3.5em 1em;
     border-radius: 0.6em;
-    color: var(--PrimaryColor);
     cursor: pointer;
 }
 
-.card .imgProfile{
-    width: 8em;
-    height: 8em;
-    background-color: pink;
-    padding: 0.5em;
+.card .imgProfile {
+    width: 9em;
+    height: 9em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
 }
 
-.card .foto{
+.card .foto {
     width: 100%;
     border-radius: 50%;
 }
 
-.card h3{
+.card h3 {
     font-weight: 500;
 }
 
-.card p{
+.card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5rem 0 2rem 0;
     letter-spacing: 1px;
 }
 
-.social-icon{
+.social-icon {
     min-width: 50px;
     margin: auto;
     justify-content: space-between;
 }
 
-.card a{
+.card a {
     text-decoration: none;
-    color: #0d3857;
     font-size: 1.4em;
 }
+
+/*bar*/
+
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgb(212, 212, 212);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+
+.navBarSection .header
+   {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .navBar{
+            background: #23324d ;
+            position: absolute;
+            height: max-content;
+            padding: 1rem;
+            width: 100%;
+            top: 0;
+            left: -500%;
+            box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+            transition: .5s ease;
+            z-index: 1000;
+        }
+
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+        }
+
+        .navItem{
+            padding: 1rem 0;
+            
+        }
+
+        .navLink{
+            color: var(--textColor);
+            font-size: .9rem;
+            font-weight: 600;
+            &:hover{
+                color: white; /*mudar isso mais tarde assim que inserir rotas */
+            }
+            
+        }
+
+        .closeNavbar{
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color: var(--PrimaryColor);
+        }
+
+        .icon{
+            &:hover{
+                color: var(--HoverColor);
+            }
+        }
+
+        .activeNavBar{
+            left: 0;
+        }
+    }
+
+    .navBarSection .activeHeader{
+        background: #23324d;
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);
+    }
+
+    .icon{
+        font-size: 25px;
+        color: var(--whiteColor);
+        &:hover{
+            color: var(--PrimaryColor);
+        }
+    }
+
+    .headerBtns{
+        flex-direction: column;
+    }
+
+
+    a{
+        font-weight: 600;
+
+        &:hover{
+            color: var
+            (--whiteColor);
+        }
+    }
+
+    .loginBtn{
+        background: none;
+        border: 1px solid var(--PrimaryColor);
+        margin: 10px;
+        &:hover{
+            background: var(--HoverColor);
+        }
+        
+    }
+
+
+    .loginBtn a{
+        color: #4596D1;
+        &:hover{
+          color: white;
+        }
+    }
+    
+
+    @media screen and (min-width: 769px) {
+        .closeNavbar, .toggleNavbar{
+          display: none;
+        }
+
+        .header{
+            padding: 1.5rem 2rem !important;
+        }
+
+        .navLists{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .navLink{
+            padding: 0 2rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+
+            &:hover{
+                color: var(--PrimaryColor);
+            }
+        }
+
+        .btn{
+            margin-left: 1rem;
+        }
+
+        .btn a{
+            font-weight: 500;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .navItem{
+            padding: 0.7em;
+        }
+        
+    }
+
+
+   

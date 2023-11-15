@@ -63,7 +63,7 @@ const Popular = () => {
         </div>
 
         <div className="mainContent grid">
-          {Data.map(({ name, imgSrc, description, status, location }) => {
+          {Data.map(({ name, imgSrc, description, location }) => {
             return (
               <div className="content-dest">
                 <div className="singleDestination">
