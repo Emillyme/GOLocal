@@ -115,6 +115,7 @@
         
     }
 
+
     .loginBtn a{
         color: #4596D1;
         &:hover{
@@ -140,8 +141,8 @@
         }
 
         .navLink{
-            padding: 0 .50rem;
-            font-size: .9rem;
+            padding: 0 2rem;
+            font-size: 1.2rem;
             font-weight: 400;
 
             &:hover{

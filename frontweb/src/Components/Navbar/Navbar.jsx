@@ -46,30 +46,17 @@ const Navbar = () => {
                         </li>
 
                         <li className="navItem">
-                            <a href="#Sobre" className="navLink">Sobre</a>
-                        </li>
-
-                        <li className="navItem">
-                            <a href="#Empresas" className="navLink">Empresas</a>
-                        </li>
-
-                        <li className="navItem">
                             <a href="#Anuncios" className="navLink">Anúncios</a>
+                        </li>
+                        
+                        <li className="navItem">
+                            <a href="#Sobre" className="navLink">Sobre</a>
                         </li>
 
                         <li className="navItem">
                             <a href="#Contato" className="navLink">Contato</a>
                         </li>
-
-                        <div className="flex">
-                            <button className='btn loginBtn'>
-                                <a href="#Login">Login</a>
-                            </button>
-                            <button className='btn'>
-                                <a href="#Cadastro" >Cadastro</a>
-                            </button>
-                        </div>
-
+            
                     </ul>
 
                     <div onClick={removeNav} className="closeNavbar">

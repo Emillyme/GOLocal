@@ -48,7 +48,7 @@ const News = () => {
                             <p> Vejas as notícias mais recentes de Hortolândia!</p>
                     </div>
 
-
+                <div className='concon grid'>
                       {
                         Posts.map(({id, postImage, title, desc}) => {
                             return(
@@ -71,11 +71,12 @@ const News = () => {
                                     </a>
                                 </div>
                             </div>
+                           
                             )
                         } )
                       }
-
                     </div>
+                </div>
         </section>
     )
 }

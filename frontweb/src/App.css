@@ -106,39 +106,21 @@ input{
     justify-content: center;
     align-items: center;
     color: var(--PrimaryColor);
+    font-size: 20px;
 }
 
 /*REPONSIVIDADE:*/
 
 @media screen and (max-width: 335px){
-    .mainContent{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-   .content-dest{
-    padding: 9px;
-   }
-
-   .singleDestination{
-    width: 260px;
-   }
-
    .cardHome {
     padding-top: 90px;
-    
    }
-}
 
-@media screen and (min-width: 336px){
-    .mainContent{
-        grid-template-columns: repeat(1,1fr);
-    }
 }
-
 
 @media screen and (min-width: 556px){
-    .mainContent{
-        grid-template-columns: repeat(1,1fr);
+    .mainContent, .singlePost{
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
@@ -156,4 +138,48 @@ input{
         margin: auto !important;
     }
 
+    .section{
+        padding: .5rem 0.3rem;
+    }
+
+    .secIntro{
+        margin: 0 auto 3rem;
+    }
+
+    .secIntro .secTitle{
+        line-height: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.2rem;
+    }
+    
+
+    .secIntro p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 2560px){
+    body{
+        zoom: 1.7;
+    }
+
+}
+
+/*Detalhezinhos :)*/
+
+::selection{
+    background: rgb(255, 142, 97);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #4596D1;
+    border-radius: 10px;
+    cursor: pointer;
 }

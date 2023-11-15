@@ -28,7 +28,6 @@
 }
 
 p{
-    font-size: 13px;
     color: var(--textColor);
     font-weight: 500;
 }
@@ -36,9 +35,10 @@ p{
 .icon-popular{
     cursor: pointer;   
     padding: .5rem;
+    margin: 0.3rem;
     background: var(--greyText);
     border-radius:  50%;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     &:hover{
         background: black;
         color: var(--whiteColor);
@@ -83,12 +83,6 @@ h3{
     font-weight: 600;
 }
 
-p{
-    color: black;
-    opacity: .7;
-    font-size: 13px;
-}
-
 
 .content-dest{
     padding-top: 30px;
@@ -105,6 +99,7 @@ p{
     color: var(--whiteColor);
     border: 1px solid transparent;
     transition: .2s ease;
+    cursor: pointer;
 
     &:hover{
         background: var(--blackColor);
@@ -173,3 +168,40 @@ p{
         margin: 10px;
     }
 }
+
+@media screen and (min-width: 556px) {
+    .secHeader{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textDiv{
+        text-align: start;
+        max-width: 70%;
+    }
+
+    .iconsDiv{
+        justify-content: flex-end;
+    }
+}
+
+
+/* esses medias arrumam a ligação do popular com a home pra eles desgrudarem*/
+@media screen and (min-width: 720px) {
+    .popular{
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popular{
+        padding-top: 10rem;
+    }
+    .mainContent{
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.4rem !important;
+    }
+}
+

@@ -3,9 +3,9 @@ import "./popular.css";
 
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
-import { BsDot } from "react-icons/bs";
 
 //imagens:
+import img1 from "../../Assets/images/(1).png";
 import img2 from "../../Assets/images/(2).jpg";
 import img3 from "../../Assets/images/(3).jpg";
 import img4 from "../../Assets/images/(4).jpg";
@@ -15,38 +15,34 @@ import img4 from "../../Assets/images/(4).jpg";
 const Data = [
   {
     imgSrc: img2,
-    name: "Elegância Moderna",
+    name: "Elegância",
     description:
-      "Explore a sofisticação da moda contemporânea na Elegância Moderna. Encontre roupas elegantes e acessórios!",
-    location: "Hortolândia - Av. Falta de Criatividade.",
-    status: "Fechado",
+      "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros ",
+    location: "Hortolândia - Centro",
   },
 
   {
     imgSrc: img3,
-    name: "Café no Jardim",
+    name: "Café Horto",
     description:
       "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros ",
     location: "Hortolândia - Centro",
-    status: "Aberto",
   },
 
   {
     imgSrc: img4,
-    name: "TechZone",
+    name: "Shopping",
     description:
-      "Navegue por uma variedade impressionante de produtos eletrônicos de última geração, incluindo smartphones, laptops, dispositivos inteligentes e acessórios inovadores.",
-    location: "Hortolândia - R. Pelé",
-    status: "Aberto",
+      "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros ",
+    location: "Hortolândia - Centro",
   },
 
   {
-    imgSrc: img4,
-    name: "TechZone",
+    imgSrc: img1,
+    name: "Colchões",
     description:
-      "Navegue por uma variedade impressionante de produtos eletrônicos de última geração, incluindo smartphones, laptops, dispositivos inteligentes e acessórios inovadores.",
-    location: "Hortolândia - R. Pelé",
-    status: "Aberto",
+      "No Café no Jardim, mergulhe em uma experiência sensorial única. Delicie-se com grãos de café selecionados, bolos caseiros ",
+    location: "Hortolândia - Centro",
   },
 ];
 
@@ -86,9 +82,6 @@ const Popular = () => {
 
                     <div className="destText flex">
                       <h6>{location}</h6>
-                      <span className="flex status">
-                        {status}
-                      </span>
                     </div>          
                   </div>
                 </div>

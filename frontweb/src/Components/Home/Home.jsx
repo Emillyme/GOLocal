@@ -9,10 +9,6 @@ const Home = () => {
           <h1 className="title">Encontre Tudo Em Hortolândia</h1>
 
           <p className="subTitle">Mais que um Guia Comercial!</p>
-
-          <button className="explore btn">
-            <a href="#explore">Explore Agora</a>
-          </button>
         </div>
 
       <div className="cardHome">

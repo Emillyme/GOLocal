@@ -29,10 +29,22 @@ const Footer = () => {
                 <a href="#Destino">Sobre</a>
             </li>
             <li>
-                <a href="#Destino">Empresas</a>
+                <a href="#Destino">Anúncios</a>
+            </li>
+        </div>
+
+        <div className="footerLinks">
+            <span className="linkTitle">
+                Ajuda
+            </span>
+            <li>
+                <a href="#Destino">Contato</a>
             </li>
             <li>
-                <a href="#Destino">Anúncios</a>
+                <a href="#Destino">Privacy</a>
+            </li>
+            <li>
+                <a href="#Destino">Etec De Hortolândia</a>
             </li>
         </div>
 

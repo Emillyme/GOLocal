@@ -19,6 +19,7 @@
 .singlePost{
     gap: 0.7rem;
     padding-top: 2.7em;
+    
 }
 
 .secTitle{
@@ -32,7 +33,7 @@
 }
 
 .imgDiv{
-    height: 200px;
+    height: 260px;
     width: 100%;
     border-radius: 1rem;
     border: 5px solid var(--greyBg);
@@ -48,6 +49,7 @@
 img{
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .postDetails h3{
@@ -74,16 +76,21 @@ a{
 }
 
 .icon-p{
-    color: white;
+    color: #1469a6;
 }
 
-&:hover .icon-p{
-    color: rgb(0, 43, 69);
-    transform: translateX(3px);
-}
 
 .readmore{
-    background: var(--PrimaryColor);
-    padding: 5px 10px 5px 10px;
-    border-radius: 30px;
+    color:#1469a6 ;
+    font-size: 18px;
+}
+
+/*REPONSIVIDADE:*/
+@media screen and (min-width: 884px){
+    .concon{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .singlePost{
+        padding-left: 10px;
+    }
 }
