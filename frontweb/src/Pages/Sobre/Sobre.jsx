@@ -47,6 +47,8 @@ const Data = [
   },
 ];
 
+// ...
+
 const Sobre = () => {
   return (
     <section className="Section-White">
@@ -59,9 +61,9 @@ const Sobre = () => {
         </div>
       </div>
 
-      {Data.map(({ img, name, job, color }) => (
-        <div className="row" key={name}>
-          <div className="column">
+      <div className="row">
+        {Data.map(({ img, name, job, color }) => (
+          <div className="column" key={name}>
             <div className="card" style={{ border: `1px solid ${color}` }}>
               <div className="imgProfile">
                 <img src={img} alt="ImageTitle" className="foto" />
@@ -82,8 +84,8 @@ const Sobre = () => {
               </a>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
