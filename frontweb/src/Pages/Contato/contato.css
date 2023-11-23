@@ -1,0 +1,53 @@
+:root{
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(44, 44, 44);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+    /*box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);*/
+}
+
+.Section-White .container-Sobre {
+    height: 40vh;
+    background-image: linear-gradient(transparent -100%, #000000c7),
+        url('../../Assets/images/us/grupo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.SobreText {
+    padding-top: 3em;
+}
+
+.SobreText p{
+    font-size: 20px;
+}
+
+.Sobre-Title {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.subTitle {
+    color: var(--PrimaryColor);
+    opacity: .9;
+    font-weight: 400;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}

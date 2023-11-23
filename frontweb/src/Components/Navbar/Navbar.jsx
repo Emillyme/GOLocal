@@ -32,7 +32,7 @@ const Navbar = () => {
         <section className="navBarSection">
             <div className={transparent}>
                 <div className="logoDiv">
-                   <div a href="#" className="logo">
+                   <div a href="/" className="logo">
                     <h1 className="flex">
                     golocal.
                     </h1>
@@ -54,7 +54,7 @@ const Navbar = () => {
                         </li>
 
                         <li className="navItem">
-                            <a href="#Contato" className="navLink">Contato</a>
+                            <a href="Contato" className="navLink">Contato</a>
                         </li>
             
                     </ul>
