@@ -13,6 +13,8 @@ import Manu from "../../Assets/images/us/manu.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Data = [
   {
@@ -51,6 +53,10 @@ const Data = [
 
 const Sobre = () => {
   return (
+    
+    <>
+    <Navbar/>
+
     <section className="Section-White">
       <div className="container-Sobre">
         <div className="SobreText">
@@ -87,6 +93,10 @@ const Sobre = () => {
         ))}
       </div>
     </section>
+
+    <Footer/>
+    </>
+
   );
 };
 

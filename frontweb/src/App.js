@@ -1,22 +1,25 @@
 import React from 'react';
-import './app.css'
-import Navbar from './Components/Navbar/Navbar';
-import Sobre from './Pages/Sobre/Sobre';
-import Footer from './Components/Footer/Footer';
-import Home from './Components/Home/Home';
-import News from './Components/News/News';
-import Popular from './Components/Popular/Popular';
+import './App.css'
+import Inicial from './Pages/Inicial/Inicial.jsx'
+import Sobre from './Pages/Sobre/Sobre.jsx';
+import Anuncios from './Pages/Anuncios/Anuncios.jsx'
+
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 const App = () => {
     return(
         <>
-        <Navbar/>
-        <Home/>
-        <Popular/>
-        <News/>
-        <Footer/>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Inicial/>}/> 
+                <Route path="/Sobre" element={<Sobre/>}/>  
+                <Route path="/Anuncios" element={<Anuncios/>}/>   
+            </Routes>
+        </Router>
         </>
+        
     )
 }
 

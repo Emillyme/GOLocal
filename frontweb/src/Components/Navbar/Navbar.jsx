@@ -42,15 +42,15 @@ const Navbar = () => {
                     <ul className="navLists flex">
                         
                         <li className="navItem">
-                            <a href="#home" className="navLink">Home</a>
+                            <a href="/" className="navLink">Home</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="#Anuncios" className="navLink">Anúncios</a>
+                            <a href="Anuncios" className="navLink">Anúncios</a>
                         </li>
                         
                         <li className="navItem">
-                            <a href="#Sobre" className="navLink">Sobre</a>
+                            <a href="Sobre" className="navLink">Sobre</a>
                         </li>
 
                         <li className="navItem">
