@@ -32,11 +32,11 @@
 }
 
 .ContatoText h1 {
-    font-size: 2.5em; /* Tamanho maior para telas de computador */
+    font-size: 2.5em; 
 }
 
 .subTitle-Contato {
-    font-size: 1.2em; /* Tamanho maior para telas de computador */
+    font-size: 1.2em;
     max-width: 70%;
     text-align: center;
     margin: auto;
@@ -44,8 +44,8 @@
 
 .containerContato {
     max-width: 1080px;
-    margin: auto; /* Centraliza horizontalmente o conteúdo */
-    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    margin: auto; 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,10 +101,10 @@
 .contact-form {
     background-color: rgb(184, 184, 184);
     padding: 40px;
-    width: 48%; /* Ajuste a largura conforme necessário */
+    width: 48%;
     padding-bottom: 20px;
     padding-top: 20px;
-    margin: auto; /* Adicione esta linha para centralizar o formulário */
+    margin: auto; 
 }
 
 .contact-form h2 {
@@ -140,7 +140,7 @@
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: rgb(23, 38, 110);
+    color: rgba(40, 50, 97, 0.658);
 }
 
 .contact-form .input-box input:focus ~ span,
@@ -180,7 +180,6 @@
     }
 }
 
-/* Adicione a regra abaixo para aumentar o tamanho do texto em telas de computador */
 @media (min-width: 992px) {
     .ContatoText h1 {
         font-size: 3em; 
