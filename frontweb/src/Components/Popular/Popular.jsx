@@ -11,6 +11,10 @@ import img3 from "../../Assets/images/(3).jpg";
 import img4 from "../../Assets/images/(4).jpg";
 
 //data:
+/*  <div className="iconsDiv flex">
+            <BsArrowLeft className="icon-popular leftIcon" />
+            <BsArrowRight className="icon-popular" />
+          </div> */
 
 const Data = [
   {
@@ -56,10 +60,7 @@ const Popular = () => {
             <h2 className="secTitle">Lugares Populares</h2>
           </div>
 
-          <div className="iconsDiv flex">
-            <BsArrowLeft className="icon-popular leftIcon" />
-            <BsArrowRight className="icon-popular" />
-          </div>
+        
         </div>
 
         <div className="mainContent grid">

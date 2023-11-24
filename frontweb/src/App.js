@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+import './app.css'
 import Inicial from './Pages/Inicial/Inicial.jsx'
 import Sobre from './Pages/Sobre/Sobre.jsx';
 import Anuncios from './Pages/Anuncios/Anuncios.jsx'

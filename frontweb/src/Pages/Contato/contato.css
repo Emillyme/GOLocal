@@ -1,4 +1,4 @@
-:root{
+:root {
     --PrimaryColor: #4596D1;
     --HoverColor: #1469a6;
     --whiteColor: white;
@@ -8,13 +8,12 @@
     --greyBg: rgba(212, 212, 212, 0.898);
     --greyText: rgb(160, 160, 160);
     --inputColor: #ececec;
-    /*box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.434);*/
 }
 
-.Section-White .container-Sobre {
+.Section-White .container-contato {
     height: 40vh;
     background-image: linear-gradient(transparent -100%, #000000c7),
-        url('../../Assets/images/us/grupo.png');
+        url('../../Assets/images/banner-contato.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,29 +24,171 @@
     position: relative;
 }
 
-.SobreText {
-    padding-top: 3em;
-}
-
-.SobreText p{
-    font-size: 20px;
-}
-
-.Sobre-Title {
-    color: var(--PrimaryColor);
-    font-weight: 700;
-    line-height: 2.5rem;
+.ContatoText h1 {
+    padding-top: 1em;
     text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #4596D1;
 }
 
-.subTitle {
-    color: var(--PrimaryColor);
-    opacity: .9;
-    font-weight: 400;
-    padding: 1rem 0;
+.ContatoText h1 {
+    font-size: 2.5em; /* Tamanho maior para telas de computador */
+}
+
+.subTitle-Contato {
+    font-size: 1.2em; /* Tamanho maior para telas de computador */
     max-width: 70%;
     text-align: center;
     margin: auto;
+}
+
+.containerContato {
+    max-width: 1080px;
+    margin: auto; /* Centraliza horizontalmente o conteúdo */
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.contact-info {
+    width: 48%; 
+}
+
+.contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #ececec;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.contact-info-content {
+    margin-left: 20px;
+}
+
+.contact-info-content h4 {
+    color: #1469a6;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.contact-info-content p {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+.contact-form {
+    background-color: rgb(184, 184, 184);
+    padding: 40px;
+    width: 48%; /* Ajuste a largura conforme necessário */
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto; /* Adicione esta linha para centralizar o formulário */
+}
+
+.contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .input-box span {
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(23, 38, 110);
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span {
+    color: rgba(40, 49, 92, 0.575);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+    width: 100%;
+    background: #4596D1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid var(--PrimaryColor);
+    transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+    background: #fff;
+    color: #1469a6;
+}
+
+@media (max-width: 991px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* Adicione a regra abaixo para aumentar o tamanho do texto em telas de computador */
+@media (min-width: 992px) {
+    .ContatoText h1 {
+        font-size: 3em; 
+        color: #4596D1;
+    }
+
+    .subTitle-Contato {
+        font-size: 1.5em; 
+        color: var(--greyText);
+    }
 }
