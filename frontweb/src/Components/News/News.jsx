@@ -16,24 +16,28 @@ const Posts = [
         postImage: img,
         title: 'Concursos e processos seletivos na Unicamp',
         desc: 'Funcamp anuncia período de inscrições para novo Processo Seletivo 2023 REGIÃO DE CAMPINAS – UNICAMP ABRE CONCURSOS PÚBLICOS 2023 Publicidade',
+        link: 'https://www.dgrh.unicamp.br/concursos/processos-seletivos-publicos-temporarios/finalizados/',
     },
     {
         id: 2,
         postImage: img2,
         title: 'Praça da Cidadania: um espaço multifuncional em breve em nossa cidade!',
         desc: 'A Praça da Cidadania está prestes a se tornar uma realidade em nossa cidade! As obras já se encontram em sua fase final e em breve será oficialmente inaugurada.',
+        link: 'https://www.dgrh.unicamp.br/concursos/processos-seletivos-publicos-temporarios/finalizados/',
     },
     {
         id: 3,
         postImage: img3,
         title: 'Confira os números sorteados na Mega-Sena',
         desc: 'Quem acertar as seis dezenas pode levar o prêmio de R$ 12 milhões. Leva prêmio ainda quem acertar cinco ou quatro números entre os seis sorteados.',
+        link: 'https://www.dgrh.unicamp.br/concursos/processos-seletivos-publicos-temporarios/finalizados/',
     },
     {
         id: 4,
         postImage: img4,
         title: 'Queda de árvore na tarde de hoje (13) interdita rua no Jardim Sumarezinho, em Hortolândia',
         desc: 'Na tarde de hoje (13), uma árvore caiu na Rua Maria Zilda Salustiano de Freitas, próxima à escola Honorino Fabbri...',
+        link: 'https://www.dgrh.unicamp.br/concursos/processos-seletivos-publicos-temporarios/finalizados/',
     },
 ]
 
@@ -65,7 +69,7 @@ const News = () => {
                                         <p> {desc} </p>
                                     </div>
     
-                                    <a href="#new" className="flex readmore">
+                                    <a href="," className="flex readmore">
                                         Leia Mais
                                         <BsArrowRightShort className="icon-p"/>
                                     </a>

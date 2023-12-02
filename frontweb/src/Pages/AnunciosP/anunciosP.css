@@ -1,0 +1,107 @@
+:root {
+    --PrimaryColor: #4596D1;
+    --HoverColor: #1469a6;
+    --whiteColor: white;
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(114, 114, 114);
+    --whiteColorDeam: rgba(255, 255, 255, 0.898);
+    --greyBg: rgba(212, 212, 212, 0.898);
+    --greyText: rgb(160, 160, 160);
+    --inputColor: #ececec;
+}
+
+/* Estilos comuns */
+.anuncios {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar li.active {
+    background-color: #f0f0f0;
+}
+
+.anuncios-mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content-dest {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* Barra de Pesquisa */
+.search-bar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (min-width: 600px) {
+    .anuncios {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+.anuncios-Section-White .container-anuncios {
+    height: 40vh;
+    background-image: linear-gradient(transparent -100%, #000000c7),
+        url('../../Assets/images/us/grupo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.anuncios-homeText {
+    text-align: center;
+}
+
+.anunciosText {
+    padding-top: 2em;
+}
+
+.anuncios-Title {
+    color: var(--whiteColor);
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 2em;
+}
+
+

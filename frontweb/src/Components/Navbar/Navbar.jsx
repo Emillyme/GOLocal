@@ -16,6 +16,12 @@ const Navbar = () => {
         setActive('navBar')
     }
 
+
+/* 
+ <li className="navItem">
+ <a href="Anuncios" className="navLink">Anúncios</a>
+        </li> */
+
 // código para navbar ficar com efeito quando descer
     const [transparent, setTransparent] = useState('header')
     const addBg = () => {
@@ -45,9 +51,6 @@ const Navbar = () => {
                             <a href="/" className="navLink">Home</a>
                         </li>
 
-                        <li className="navItem">
-                            <a href="Anuncios" className="navLink">Anúncios</a>
-                        </li>
                         
                         <li className="navItem">
                             <a href="Sobre" className="navLink">Sobre</a>

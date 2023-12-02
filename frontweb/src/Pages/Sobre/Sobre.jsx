@@ -49,28 +49,26 @@ const Data = [
   },
 ];
 
-// ...
-
 const Sobre = () => {
   return (
     
     <>
     <Navbar/>
 
-    <section className="Section-White">
-      <div className="container-Sobre">
+    <section className="Sobre-Section-White">
+      <div className="Sobre-container-Sobre">
         <div className="SobreText">
           <h1 className="Sobre-Title">Conheça nosso time!</h1>
-          <p className="subTitle">
+          <p className="Sobre-subTitle">
             Os desenvolvedores e futuros profissionais :D
           </p>
         </div>
       </div>
 
-      <div className="row">
+      <div className="Sobre-row">
         {Data.map(({ img, name, job, color }) => (
-          <div className="column" key={name}>
-            <div className="card" style={{ border: `1px solid ${color}` }}>
+          <div className="Sobre-column" key={name}>
+            <div className="Sobre-card" style={{ border: `1px solid ${color}` }}>
               <div className="imgProfile">
                 <img src={img} alt="ImageTitle" className="foto" />
               </div>

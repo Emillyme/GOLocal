@@ -4,6 +4,14 @@ import "./footer.css";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
+
+/** 
+ * 
+ * <div className="socials flex">
+            <AiFillGithub className="icon-f" />
+            <AiOutlineWhatsApp className="icon-f" />
+          </div>
+*/
 const Footer = () => {
   return (
     <div className="footer">
@@ -12,10 +20,7 @@ const Footer = () => {
           <div a href="#" className="footerlogo">
             <h1 className="flex logo-f">golocal.</h1>
           </div>
-          <div className="socials flex">
-            <AiFillGithub className="icon-f" />
-            <AiOutlineWhatsApp className="icon-f" />
-          </div>
+          
         </div>
 
         <div className="footerLinks">
@@ -38,7 +43,7 @@ const Footer = () => {
                 Ajuda
             </span>
             <li>
-                <a href="#Destino">Contato</a>
+                <a href="Contato">Contato</a>
             </li>
             <li>
                 <a href="#Destino">Privacy</a>
@@ -53,7 +58,7 @@ const Footer = () => {
                 Contato
             </span>
             <span className="phone">+55 19 49494-4949</span>
-            <span className="email">golocal@gmail.com</span>
+            <span className="email">golocal.oficial1@gmail.com</span>
         
             <span className="etec">©️ ETEC DE HORTOLÂNDIA - TCC</span>
         

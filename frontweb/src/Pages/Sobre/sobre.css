@@ -10,7 +10,7 @@
     --inputColor: #ececec;
 }
 
-.Section-White .container-Sobre {
+.Sobre-Section-White .Sobre-container-Sobre {
     height: 60vh;
     background-image: linear-gradient(transparent -100%, #000000c7),
         url('../../Assets/images/us/grupo.png');
@@ -24,7 +24,7 @@
     position: relative;
 }
 
-.homeText {
+.Sobre-homeText {
     text-align: center;
 }
 
@@ -44,7 +44,7 @@
     font-size: 2em;
 }
 
-.subTitle {
+.Sobre-subTitle {
     color: var(--whiteColor);
     opacity: .9;
     font-weight: 300;
@@ -54,7 +54,7 @@
     margin: auto;
 }
 
-.row {
+.Sobre-row {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -63,35 +63,35 @@
     padding: 3em 1em;
 }
 
-.column {
+.Sobre-column {
     width: 100%;
     padding: 0.5em 0;
 }
 
-.card {
+.Sobre-card {
     box-shadow: 0 0 2.2em rgba(0, 0, 0, 0.43);
     padding: 3.5em 1em;
     border-radius: 0.6em;
     cursor: default;
 }
 
-.card .imgProfile {
+.Sobre-card .imgProfile {
     width: 9em;
     height: 9em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
 }
 
-.card .foto {
+.Sobre-card .foto {
     width: 100%;
     border-radius: 50%;
 }
 
-.card h3 {
+.Sobre-card h3 {
     font-weight: 500;
 }
 
-.card p {
+.Sobre-card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5rem 0 2rem 0;
@@ -108,12 +108,12 @@
     color: #20045d;
 }
 
-.card a {
+.Sobre-card a {
     text-decoration: none;
     font-size: 1.4em;
 }
 
-.card .imgProfile {
+.Sobre-card .imgProfile {
     width: 9em;
     height: 9em;
     border-radius: 50%;
@@ -121,12 +121,12 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.card:hover .imgProfile {
+.Sobre-card:hover .imgProfile {
     transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
-    .column {
+    .Sobre-column {
         width: calc(48% - 1em);
     }
 
@@ -141,11 +141,11 @@
 }
 
 @media screen and (min-width: 992px) {
-    .column {
+    .Sobre-column {
         width: calc(32% - 1em);
     }
 
-    .row p{
+    .Sobre-row p{
         font-size: 1.2em;
     }
 }
